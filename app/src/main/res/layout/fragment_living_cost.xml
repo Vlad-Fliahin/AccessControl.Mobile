@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.livingcost.LivingCostFragment">
+
+    <TextView
+        android:id="@+id/living_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70sp"
+        android:layout_marginTop="250sp"
+        android:fontFamily="@font/titan_one"
+        android:gravity="center_horizontal"
+        android:text="@string/living_cost"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:id="@+id/price_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/living_info"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="20sp">
+
+
+        <TableRow
+            android:id="@+id/electricity_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/electricity_row_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="70sp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/titan_one"
+                android:gravity="center_horizontal"
+                android:text="@string/electricity"
+                android:textAlignment="center"
+                android:textColor="@color/link"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/electricity_row_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="70sp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/titan_one"
+                android:gravity="center_horizontal"
+                android:text="200$"
+                android:textAlignment="center"
+                android:textColor="@color/link"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/gas_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/gas_row_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="70sp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/titan_one"
+                android:gravity="center_horizontal"
+                android:text="@string/gas"
+                android:textAlignment="center"
+                android:textColor="@color/link"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/gas_row_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="70sp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/titan_one"
+                android:gravity="center_horizontal"
+                android:text="200$"
+                android:textAlignment="center"
+                android:textColor="@color/link"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/water_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/water_row_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="70sp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/titan_one"
+                android:gravity="center_horizontal"
+                android:text="@string/water"
+                android:textAlignment="center"
+                android:textColor="@color/link"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/water_row_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="70sp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/titan_one"
+                android:gravity="center_horizontal"
+                android:text="200$"
+                android:textAlignment="center"
+                android:textColor="@color/link"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <View
+            style="@style/Divider.Horizontal"
+            android:layout_marginTop="10sp"
+            />
+
+        <TableRow
+            android:id="@+id/total_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10sp">
+
+            <TextView
+                android:id="@+id/total_row_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="70sp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/titan_one"
+                android:gravity="center_horizontal"
+                android:text="@string/total"
+                android:textAlignment="center"
+                android:textColor="@color/link"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/total_row_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="70sp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/titan_one"
+                android:gravity="center_horizontal"
+                android:text="200$"
+                android:textAlignment="center"
+                android:textColor="@color/link"
+                android:textSize="16sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/loading_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price_table"
+        android:layout_marginHorizontal="70sp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/titan_one"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp" />
+</RelativeLayout>
